@@ -20,6 +20,7 @@ $(EXEC): $(OBJ)
 		$^ \
 		$(LIB_DIR)/libc.a \
 		$(LIB_DIR)/crtn.o \
+		-static \
 		-o $@
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
